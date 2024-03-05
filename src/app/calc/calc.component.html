@@ -1,0 +1,23 @@
+<form>
+    <div class="number1">
+        <p>Primeiro numero</p>
+        <input type="number" [(ngModel)]= "num1" name= "num1">
+    </div>
+    <div class="number2">
+      <p>Segundo numero</p>
+      <input type="number" [(ngModel)]= "num2" name= "num2" >
+    </div>
+        
+
+    <div class="button">
+          <button (click) = "calc('+')">+</button>
+            <button (click) = "calc('-')">-</button>
+              <button (click) = "calc('x')">x</button>
+                <button (click) = "calc('÷')">÷</button>
+  
+   </div>
+        
+    <div class="result">
+            <p>Resultado: {{resultado}}</p>
+   </div> 
+</form>
